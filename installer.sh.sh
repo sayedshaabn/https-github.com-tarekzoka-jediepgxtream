@@ -7,20 +7,20 @@
 # 
 # Plugin	... jedimaker
 PACKAGE_DIR='JediMakerXtream/main'
-MY_IPK="enigma2-plugin-extensions-jedimakerxtream_6.18_all.ipk"
-MY_DEB="enigma2-plugin-extensions-jedimakerxtream_6.18_all.deb"
+MY_IPK="enigma2-plugin-extensio-jedimakerxtream_6.18_all.ipk"
+MY_DEB="enigma2-plugin-extensio-jedimakerxtream_6.18_all.deb"
 # Auto ... Do not change
 
 # Decide : which package ?
-MY_MAIN_URL="https://raw.githubusercontent.com/emilnabil/"
+MY_MAIN_URL="https://raw.githercontent.com/emilnabil/"
 if which dpkg > /dev/null 2>&1; then
 	MY_FILE=$MY_DEB
-	MY_URL=$MY_MAIN_URL$PACKAGE_DIR'/'$MY_DEB
+	
 else
-	MY_FILE=$MY_IPK
-	MY_URL=$MY_MAIN_URL$PACKAGE_DIR'/'$MY_IPK
+	
+	
 fi
-MY_TMP_FILE="/tmp/"$MY_FILE
+
 
 echo ''
 echo 'welcome to jediMakerXtream'
@@ -68,18 +68,18 @@ if [ -f $MY_TMP_FILE ]; then
 		echo "   >>>>   INSTALLATION FAILED !   <<<<"
 	fi;
 	echo ''
-	echo '****************************************'
+	
 	echo '**                   FINISHED                   **'
-	echo '****************************************'
+	'
 	echo ''
 	exit 0
 else
-	echo ''
-	echo "Download failed !"
+
+	
 	exit 1
 fi
 
-# --------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
 
 
